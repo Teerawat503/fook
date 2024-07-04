@@ -43,6 +43,15 @@ export default function Index() {
           </a>
         </li>
       </ul>
+      <hr />
+      <hr className="m-4"/>
+      <h1 className="text-3xl">Welcome to Teerawat</h1>
+      <ul className="list-disc mt-4 pl-6 space-y-2">
+        <li> Hello My teerawat </li>
+        <li> Class IT </li>
+        <li> Email: <a href="malto:teerawat.bar@rmutto.ac.th"> Contact me </a></li>
+        <li><img src="photos\5.png" width="500" height="600"></img></li>
+       </ul>   
     </div>
   );
 }
