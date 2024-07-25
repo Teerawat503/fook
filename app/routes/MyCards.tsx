@@ -26,6 +26,7 @@ function Profiles({
   act: boolean;
 }) {
   return (
+    <center>
     <div className="max-w-sm w-full lg:max-w-full lg:flex">
       <div
         className="m-6 h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
@@ -58,6 +59,7 @@ function Profiles({
         </div>
       </div>
     </div>
+    </center>
   );
 }
 
@@ -105,6 +107,7 @@ export default function MyCards() {
   }
 
   return (
+    <center>
     <div className="m-10 bg-sky-300 p-10 rounded-3xl">
       <>
         <h1 className="font-bold text-3xl">My Cards: {name}</h1>
@@ -117,9 +120,9 @@ export default function MyCards() {
               className="size-6"
             >
               <path
-                fill-rule="evenodd"
+                fill-Rule="evenodd"
                 d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z"
-                clip-rule="evenodd"
+                clip-Rule="evenodd"
               />
             </svg>
             {note}
@@ -133,9 +136,9 @@ export default function MyCards() {
             >
               <path d="M12 9a3.75 3.75 0 1 0 0 7.5A3.75 3.75 0 0 0 12 9Z" />
               <path
-                fill-rule="evenodd"
+                fill-Rule="evenodd"
                 d="M9.344 3.071a49.52 49.52 0 0 1 5.312 0c.967.052 1.83.585 2.332 1.39l.821 1.317c.24.383.645.643 1.11.71.386.054.77.113 1.152.177 1.432.239 2.429 1.493 2.429 2.909V18a3 3 0 0 1-3 3h-15a3 3 0 0 1-3-3V9.574c0-1.416.997-2.67 2.429-2.909.382-.064.766-.123 1.151-.178a1.56 1.56 0 0 0 1.11-.71l.822-1.315a2.942 2.942 0 0 1 2.332-1.39ZM6.75 12.75a5.25 5.25 0 1 1 10.5 0 5.25 5.25 0 0 1-10.5 0Zm12-1.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
-                clip-rule="evenodd"
+                clip-Rule="evenodd"
               />
             </svg>
             {note2}
@@ -151,5 +154,6 @@ export default function MyCards() {
         {cardItems}
       </>
     </div>
+    </center>
   );
 }
