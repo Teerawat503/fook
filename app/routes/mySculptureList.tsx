@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { sculpturelists } from "./SculptureLists";
+import AppMenu from "./template/manu";
 
 export default function EProject() {
   const [index, setIndex] = useState(0);
@@ -25,6 +26,7 @@ export default function EProject() {
 
   return (
     <>
+      <AppMenu />
       <div className="flex justify-center space-x-4 my-4">
         <button
           onClick={handleClickNext}

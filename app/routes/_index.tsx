@@ -1,5 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
-import MyCards from "./MyCards";
+import MyCards from "./cards.MyCards";
+import AppMenu from "./template/manu";
 
 export const meta: MetaFunction = () => {
   return [
@@ -11,9 +12,9 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <center>
-    <MyCards />
-    </center>
+    <><AppMenu />
+    <MyCards /></> 
+    
     // <div className="font-sans p-4">
     //   <h1 className="text-3xl">Welcome to Remix</h1>
     //   <ul className="list-disc mt-4 pl-6 space-y-2">

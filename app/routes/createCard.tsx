@@ -1,4 +1,5 @@
 import { useState } from "react";
+import AppMenu from "./template/manu";
 
 export default function CreateCard() {
   const [name, setName] = useState("");
@@ -25,6 +26,8 @@ export default function CreateCard() {
   };
 
   return (
+    <>
+    <AppMenu />
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-6 text-center">เพิ่มข้อมูล</h1>
       <div className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md">
@@ -103,6 +106,9 @@ export default function CreateCard() {
           ))}
         </div>
       </div>
+      <a href="/" className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Back</a>
+
     </div>
+    </>
   );
 }
